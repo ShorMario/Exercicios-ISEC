@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int verificar(int num,int lim1,int lim2);
+
+int main(void) {
+  int lim1,lim2,num;
+
+  printf("Insira dois limites: ");
+  scanf("%d %d",&lim1,&lim2);
+
+  if(lim1<lim2){
+    
+    printf("Insira um número: ");
+    scanf("%d",&num);
+    
+    printf("\nDentro do limite?\n %d --> %d <-- %d = %d\n\n1 = Sim || 0 = Não ", lim1,num,lim2,verificar(num, lim1, lim2));
+
+  } else{
+    printf("Limite invalidos");
+  }
+
+}
+
+int verificar(int num,int lim1,int lim2){
+
+  if(num >= lim1 && num <= lim2){
+    return 1;
+
+  } else
+  return 0;
+
+}
+

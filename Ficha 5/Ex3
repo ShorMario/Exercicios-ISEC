@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void linha(int n);
+
+int main(void){
+  int num;
+
+  printf("Insira o numero de * de uma linha: ");
+  scanf("%d",&num);
+  
+  if(num > 0){
+    linha(num);
+  } else{
+    printf("Insira um numero maior que 0");
+  }
+
+}
+
+void linha(int n){
+
+  for(int i=0;i<n;i++){
+    printf("*");
+  }
+
+}

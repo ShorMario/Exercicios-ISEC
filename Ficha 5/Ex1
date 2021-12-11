@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int quadrado(int num);
+
+int main(void) {
+
+  int num;
+
+  do{
+    printf("Insira um número: ");
+    scanf("%d",&num); 
+    printf("%d^2 = %d\n",num,quadrado(num));
+  }while(num != 0);
+
+
+}
+
+
+int quadrado(int num){
+
+  return num*num;
+
+}
