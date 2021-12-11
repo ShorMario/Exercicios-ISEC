@@ -10,6 +10,10 @@ Aqui estão exercícios que eu vou fazendo.
   - 11
 - Ficha 4 - **NADA**
 - Ficha 5
+  - 1
+  - 2
+  - 3
+  - 4 
   - 19.a.b
 
 > BY *ShorMário* for *YOU* with ❤️
