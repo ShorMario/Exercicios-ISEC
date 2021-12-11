@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main(void) {
+
+  int a,b,c;
+  float raiz,neg,pos;
+  
+  printf("Insira os valores para: \n a: ");
+  scanf("%d",&a);
+  printf(" b: ");
+  scanf("%d",&b);
+  printf(" c: ");
+  scanf("%d",&c);
+
+  raiz = b*b - 4*a*c ;
+
+  if(raiz >= 0){
+    neg = (-a-sqrt(raiz))/(2*a);
+    pos = (-a+sqrt(raiz))/(2*a);
+    
+    printf("C.S{%0.f,%0.f}",neg,pos);
+  } else
+      printf("NAO EXISTE RAIZES REAIS");
+
+
+
+}

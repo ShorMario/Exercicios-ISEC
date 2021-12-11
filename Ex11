@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+char* aprovar(int nota);
+
+int Ex11(void) {
+
+  char disciplina;
+  int nota;
+
+  printf("Disciinas: \n Portugues(P)\n Ingles(I)\n Matematica(M)\n");
+  scanf("%c",&disciplina);
+
+  printf("Indique a nota obtida(0-20): ");
+  scanf("%d",&nota);
+
+  if(disciplina == 'P' && nota < 20 && nota >= 0){
+    printf("Na disciplina de Portugues o aluno %s com %d valores",aprovar(nota), nota);
+  } else if(disciplina == 'I' && nota < 20 && nota >= 0){
+    printf("Na disciplina de Ingles o aluno %s com %d valores",aprovar(nota), nota);
+
+  } else if(disciplina == 'M' && nota < 20 && nota >= 0){
+    printf("Na disciplina de Matematica o aluno %s com %d valores",aprovar(nota), nota);
+
+  } else{
+    printf("VALORES INCORRETOS");
+  }
+}
+
+char* aprovar(int nota){
+
+  if(nota < 10){
+    return "reprovou";
+  } else if(nota >= 10 && nota < 20){
+    return "passou";
+  } else{
+    return "invaliido";
+  }
+
+}
